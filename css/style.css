@@ -1,0 +1,46 @@
+body {
+  background-color: #ffffff;
+}
+.user-card {
+  width: 320px; /* например, фиксированная ширина */
+  border: 1px solid #080961;
+  padding: 10px;
+  text-align: center; /* чтобы выровнять содержимое по центру */
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+}
+
+.user-card__photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* круглая аватарка */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px; /* отступ снизу, чтобы текст не прилипал */
+}
+
+.user-card__info span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-card__button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  background-image: linear-gradient(60deg, #b286ef 10%, #981fbf 50%, #7e20fd 100%);
+  box-shadow: 0 2px 25px 0 rgba(81, 17, 103, 0.35);
+}
+
+.user-card__button:hover {
+  background-color: #357abd;
+}
+li {
+  list-style-type: none;
+}
