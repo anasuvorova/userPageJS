@@ -10,6 +10,9 @@ body {
   background-color: antiquewhite;
 }
 
+.user-card__contacts_hidden {
+  display: none;
+}
 .user-card__photo {
   width: 100px;
   height: 100px;

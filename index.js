@@ -52,10 +52,10 @@ class userCard {
       <button class="user-card__button">${this._button}</button>
   </div>
 
-<div class= "user-card__contacts">
-  <ul class="user-card__connection" style="display: none;">
-        <li>${this._email}</li>
-         <li>${this._phone}</li>
+<div class= "user-card__contacts user-card__contacts_hidden">
+  <ul class="user-card__connection user-card__connection_ hidden">
+        <li class="user-card__item ">${this._email}</li>
+         <li class="user-card__item ">${this._phone}</li>
       </ul>
       </div>
     
@@ -79,16 +79,15 @@ class userCard {
     });
   }
   _render() {
-    const showContactInfo = this._element.querySelector(".user-card__connection");
+    const showContactInfo = this._element.querySelector(".user-card__contacts");
     const button = this._element.querySelector(".user-card__button");
 
-    if (this._stateShow.info === true) {
-      showContactInfo.style.display = "block";
-      showContactInfo.classList.add("active");
+    if (this._stateShow.info) {
+      showContactInfo.classList.remove("user-card__contacts_hidden");
       button.textContent = "Скрыть";
     } else {
-      showContactInfo.style.display = "none";
-      showContactInfo.classList.remove("active");
+      showContactInfo.classList.add("user-card__contacts_hidden");
+
       button.textContent = "показать";
     }
   }
