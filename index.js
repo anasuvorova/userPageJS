@@ -98,13 +98,13 @@ userPage.insertAdjacentElement(
   "beforeend",
   new userCard({
     photo: "./img/programmer.jpg",
-    name: "Имя: Иван",
-    surname: "Фамилия: Иванов",
-    nik: "Ник: Ivan",
-    birthday: "Дата рождения: 11.11.1990",
-    town: "Город: Москва",
+    name: " Иван",
+    surname: " Иванов",
+    nik: " Ivan",
+    birthday: "11.11.1990",
+    town: " Москва",
     button: "показать контактную информацию",
-    email: "Email: ivanov@yandex.ru",
-    phone: "Телефон: +7-888-888-88-88",
+    email: " ivanov@yandex.ru",
+    phone: "+7-888-888-88-88",
   }).element
 );
