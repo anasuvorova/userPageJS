@@ -5,14 +5,10 @@ const createTemplate = (template) => {
   return element.firstElementChild;
 };
 
-class userCard {
+class UserCard {
   _stateShow = {
     //контактная информация скрыта
     info: false,
-  };
-
-  _stateHide = {
-    displayNone: true,
   };
 
   constructor({ photo, name, surname, nik, birthday, town, button, email, phone }) {
@@ -96,7 +92,7 @@ const userPage = document.querySelector(".root");
 
 userPage.insertAdjacentElement(
   "beforeend",
-  new userCard({
+  new UserCard({
     photo: "./img/programmer.jpg",
     name: " Иван",
     surname: " Иванов",
